@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d7867169ef.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-  <div class="split-left">
+<div class="split-left" id="left">
   <div class="centered">
     <h2>LOGIN TO TEAM ICON</h2>
     <div class="input-box">
@@ -30,15 +31,24 @@
         <i class="fab fa-linkedin-in"></i>
     </div>
     
-    <button>Login</button>
+    <div class="btn">
+      <button>Login</button>
+    </div>
+
+    <div class="link">
+      Don't have an account? <a onclick='return check()'>Create one</a>
+    </div>
   </div>
 </div>
 
-<div class="split-right">
+<div class="split-right" id="right">
   <div class="centered">
     <h2>HELLO FRIEND!</h2>
     <p>Enter personal details and start a journey with us.</p>
     <button>Signup</button>
+    <div class="link-right">
+      Don't have an account? <a onclick='return back()'>Create one</a>
+    </div>
   </div>
 </div> 
 </body>

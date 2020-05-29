@@ -90,7 +90,7 @@
       color: black;
   }
 
-  .split-left button{
+  .split-left .btn button{
     background-color: #00b796; /* Green */
     border :none;
     border-radius: 30px;
@@ -148,4 +148,81 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+  .link{
+    display:none;
+  }
   
+
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px) {
+    .split-right{
+      display: none;
+    }
+
+    .split-left{
+      width: 100%;
+    }
+
+    .input-field {
+      width: 200px;
+    }
+
+    .split-left .password{
+      left: 90px;
+      bottom: 20px;
+    }
+
+    .split-left .email{
+      top: 125px;
+      left: 73px;
+    }
+
+    .split-left h2{
+      position: absolute;
+      left: 15px;
+      bottom: 280px;
+      color: #00b796;
+    }
+
+    .row{
+      position: relative;
+      top: 30px;
+    }
+
+    .row i.fab:nth-child(2){
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .split-left .btn button{
+    padding: 10px 60px;
+    top: 60px;
+  }
+
+  .link{
+    display: inline;
+    position: relative;
+    top: 90px;
+  }
+
+  .link a{
+    color: #00b796;
+  }
+
+  .link a:hover{
+    color: blue;
+  }
+
+  .split-right {
+    width: 100%;
+  }
+
+  .link-right{
+    margin-top: 30px;
+  }
+  .link-right a{
+    color: black;
+  }
+}
